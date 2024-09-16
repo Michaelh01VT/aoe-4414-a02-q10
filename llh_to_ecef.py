@@ -37,7 +37,7 @@ def llh_to_ecef(lat_deg, lon_deg, hae_km):
     r_Y = (C_E + hae_km) * cos_phi_gd * math.sin(lon_rad)
     r_Z = (S_E + hae_km) * sin_phi_gd
     return r_X, r_Y, r_Z
-if len(sys.argv) == 3:
+if len(sys.argv) == 4:
     lat_deg = float(sys.argv[1])
     lon_deg = float(sys.argv[2])
     hae_km = float(sys.argv[3])
